@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script src="C:\Users\Anthony\PhpstormProjects\CS491\jquery-3.4.1.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<form class="form" id="myForm">
+    <label for="username">Username</label>
+    <input type="text" name="user" id="user">
+    <label for="password">Password</label>
+    <input type="password" name="pass" id="pass">
+    <button type="submit">Enter</button>
+</form>
+
+</body>
+
+<script>
+    $(document).ready(function(){
+        $("myForm").submit(function(){ //this listens for a submit event on a form with the id 'myForm'
+
+            var user = document.getElementById('user').value; //gets username from html input form with id to 'user'
+            var pass = document.getElementById('pass').value; //does the same but with id 'pass'
+
+            $.post( database/*database URL*/,
+                {
+                    user: user,
+                    pass: pass,
+                },
+                funcName/*name of JS function to perform on successful login validation using callback parameters*/);
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="untitled.css">
+</head>
+<header>
+     <div class="logo">
+     	<img src="diynovlogo.jpg" alt="diyNovice">
+     </div>
+</header>
+<body>
+	<div class="topnav">
+	  <a href="#BoutIt">Visit BoutIt.com</a>
+	  <a href="estimator.html">Renovation Estimator</a>
+	  <a href="#contact">Account</a>
+	  <a href="#about">Other System Resources</a>
+	</div>
+
+	<div class="wrapper">
+		<form id="survey">
+			<h2>Renovation Estimator</h2>
+			<!----- Q1 ----->
+			<h3>1. Do you need new flooring?</h3>
+				<input type="radio" id="Yes" name="Yes" value="Yes">
+				<label for="Yes"> Yes</label><br>
+				<input type="radio" id="No" name="No" value="No">
+				<label for="No"> No</label>
+			<!----- Q2 ----->
+			<h3>2. If so, what type of flooring?</h3>
+				<input type="radio" id="Hardwood" name="Hardwood" value="Hardwood">
+				<label for="Hardwood"> Hardwood</label><br>
+				<input type="radio" id="Vinyl" name="Vinyl" value="Vinyl">
+				<label for="Vinyl"> Vinyl</label><br>
+				<input type="radio" id="CeramicTiles" name="CeramicTiles" value="CeramicTiles">
+				<label for="CeramicTiles"> Ceramic Tiles</label><br>
+				<input type="radio" id="No" name="No" value="No">
+				<label for="No"> Do not need flooring</label><br>
+			<!----- Q3 ----->
+			<h3>3. Do you need windows?</h3>
+				<input type="radio" id="Yes" name="Yes" value="Yes">
+				<label for="Yes"> Yes</label><br>
+				<input type="radio" id="No" name="No" value="No">
+				<label for="No"> No</label><br>
+			<!----- Q4 ----->
+			<h3>4. If yes, how many?</h3>
+				<input type="radio" id="1" name="1" value="1">
+				<label for="1"> 1-2</label><br>
+				<input type="radio" id="3" name="3" value="3">
+				<label for="3"> 3-4</label><br>
+				<input type="radio" id="5" name="5" value="5">
+				<label for="5"> 5+</label><br>
+				<input type="radio" id="No" name="No" value="No">
+				<label for="No"> Do not need any windows</label><br>
+			<!----- Q5 ----->
+			<h3>5. Do you want a new door for the room?</h3>
+				<input type="radio" id="Yes" name="Yes" value="Yes">
+				<label for="Yes"> Yes</label><br>
+				<input type="radio" id="No" name="No" value="No">
+				<label for="No"> No</label><br>
+			<!----- Q6 ----->
+			<h3>6. Do you need new appliances for the room?</h3>
+				<input type="radio" id="Yes" name="Yes" value="Yes">
+				<label for="Yes"> Yes</label><br>
+				<input type="radio" id="No" name="No" value="No">
+				<label for="No"> No</label><br>
+			<!----- Q6 ----->
+			<h3>7. If yes, what type of appliances would you need?</h3>
+				<input type="checkbox" id="Yes" name="Yes" value="Yes">
+				<label for="Yes"> Refrigerator</label><br>
+				<input type="checkbox" id="No" name="No" value="No">
+				<label for="No"> Stove</label><br>
+				<input type="checkbox" id="No" name="No" value="No">
+				<label for="No"> Oven</label><br>
+				<input type="checkbox" id="No" name="No" value="No">
+				<label for="No"> Dishwasher</label><br>
+				<input type="radio" id="No" name="No" value="No">
+				<label for="No"> Do not need new appliances</label><br><br>
+			
+
+		</form>
+		<p id="demo"></p>
+		<button onclick="calculate()">Submit</button>	
+		<script>
+			function calculate() {
+			  document.getElementById("demo").innerHTML = "The total cost of your renovation will be  roughly $21,400.";
+			}
+		</script>
+		</div>
+		
+
+
+</body>
+
+
+</html>
